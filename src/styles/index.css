@@ -1,0 +1,136 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ========================================
+   BASE STYLE
+======================================== */
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-body antialiased text-charcoal bg-white;
+    overflow-x: hidden;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-heading;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  img,
+  video {
+    max-width: 100%;
+  }
+}
+
+/* ========================================
+   COMPONENTS
+======================================== */
+
+@layer components {
+
+  /* Container utama */
+  .pp-container {
+    @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+
+  /* Input Admin */
+  .input-admin {
+    @apply w-full rounded-md border border-steel-gray/25
+    px-3 py-2.5 text-sm text-charcoal
+    focus:border-pp-yellow focus:outline-none
+    focus:ring-1 focus:ring-pp-yellow;
+  }
+
+  /* Tombol utama */
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2
+    rounded-md bg-pp-yellow px-5 py-3
+    font-semibold text-charcoal
+    transition-all duration-300
+    hover:brightness-95;
+  }
+
+  /* Kartu */
+  .pp-card {
+    @apply overflow-hidden rounded-xl border border-gray-200
+    bg-white transition-all duration-300;
+  }
+
+  .pp-card:hover {
+    @apply shadow-lg;
+  }
+
+  /* Gambar kartu */
+  .pp-card img {
+    @apply block h-full w-full object-cover;
+  }
+
+  /* Badge status */
+  .status-available {
+    @apply inline-flex items-center gap-1 rounded-full
+    bg-green-100 px-3 py-1 text-xs font-semibold text-green-700;
+  }
+
+  .status-unavailable {
+    @apply inline-flex items-center gap-1 rounded-full
+    bg-red-100 px-3 py-1 text-xs font-semibold text-red-600;
+  }
+}
+
+/* ========================================
+   RESPONSIVE FIX
+======================================== */
+
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  h1 {
+    line-height: 1.2;
+  }
+
+  h2 {
+    line-height: 1.3;
+  }
+
+  p {
+    line-height: 1.6;
+  }
+
+  button,
+  input,
+  select,
+  textarea {
+    max-width: 100%;
+  }
+}
+
+/* ========================================
+   ANIMATION PREFERENCE
+======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
