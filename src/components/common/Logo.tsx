@@ -6,7 +6,7 @@ import { useState } from 'react';
 // Kalau file belum ada / gagal dimuat, otomatis tampil badge teks "PP"
 // sehingga tidak pernah muncul ikon gambar pecah.
 
-const LOGO_IMAGE_PATH = 'P2R.jpeg'; 
+const LOGO_IMAGE_PATH = '/images/P2R.jpeg';
 
 interface LogoProps {
   variant?: 'light' | 'dark';
