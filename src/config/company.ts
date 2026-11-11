@@ -14,14 +14,14 @@ export const COMPANY = {
   tagline: 'POWERING EVERY PROJECT.',
 
   // Format internasional TANPA tanda plus/spasi/strip, contoh: 6281234567890
-  whatsappNumber: 'PLACEHOLDER_NOMOR_WHATSAPP',
+  whatsappNumber: '6283891235144',
 
   email: 'PLACEHOLDER_EMAIL@putraperintis.co.id',
   address: 'PLACEHOLDER_ALAMAT_LENGKAP_PERUSAHAAN',
   operationalHours: 'Senin–Sabtu, 08.00–17.00 WIB (PLACEHOLDER)',
 
   // Tautan embed Google Maps, kosongkan ("") jika belum tersedia.
-  googleMapsUrl: '',
+  googleMapsUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.5617984709943!2d106.60758137485571!3d-6.321142893668412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69e31d9ae76f25%3A0xd3b95db4fe81738f!2sPUTRA%20PERINTIS%20RENTAL%20ALAT%20BERAT!5e0!3m2!1sid!2sid!4v1794381027424!5m2!1sid!2sid%22',
 
   // Tahun digunakan di footer sebagai cadangan jika Date() gagal dihitung.
   foundingYearPlaceholderNote:

@@ -4,13 +4,19 @@ import { MessageCircle, ArrowRight } from 'lucide-react';
 import { EquipmentImage } from '@/components/common/EquipmentImage';
 import { COMPANY, buildWhatsAppUrl, generalWhatsAppMessage } from '@/config/company';
 
+// Foto latar hero. Secara default pakai foto stok (ilustrasi) dari Unsplash
+// agar langsung tampil tanpa perlu upload file. Untuk pakai foto armada asli
+// perusahaan: taruh file di public/images/hero/hero-alat-berat.jpg lalu ganti
+// nilai di bawah ini menjadi '/images/hero/hero-alat-berat.jpg'.
+const HERO_IMAGE_PATH =
+  'https://images.unsplash.com/photo-1580901369227-30f5b8752ae8?auto=format&fit=crop&w=1920&q=80';
+
 export function HeroSection() {
   return (
     <section className="relative min-h-[90vh] overflow-hidden bg-deep-black pt-16">
-      {/* Foto latar — ganti dengan foto armada asli di public/images/hero/ */}
       <div className="absolute inset-0">
         <EquipmentImage
-          src="/images/hero/hero-alat-berat.jpg"
+          src={HERO_IMAGE_PATH}
           alt="Alat berat PUTRA PERINTIS"
           eager
           className="h-full w-full opacity-50"
