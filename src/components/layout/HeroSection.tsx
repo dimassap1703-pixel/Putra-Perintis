@@ -8,7 +8,7 @@ import { COMPANY, buildWhatsAppUrl, generalWhatsAppMessage } from '@/config/comp
 // agar langsung tampil tanpa perlu upload file. Untuk pakai foto armada asli
 // perusahaan: taruh file di public/images/hero/hero-alat-berat.jpg lalu ganti
 // nilai di bawah ini menjadi '/images/hero/hero-alat-berat.jpg'.
-const HERO_IMAGE_PATH = 'public/images/hero/bg p2r.jpeg';
+const HERO_IMAGE_PATH = 'bg p2r.jpeg';
 
 export function HeroSection() {
   return (
