@@ -8,8 +8,7 @@ import { COMPANY, buildWhatsAppUrl, generalWhatsAppMessage } from '@/config/comp
 // agar langsung tampil tanpa perlu upload file. Untuk pakai foto armada asli
 // perusahaan: taruh file di public/images/hero/hero-alat-berat.jpg lalu ganti
 // nilai di bawah ini menjadi '/images/hero/hero-alat-berat.jpg'.
-const HERO_IMAGE_PATH =
-  'https://images.unsplash.com/photo-1580901369227-30f5b8752ae8?auto=format&fit=crop&w=1920&q=80';
+const HERO_IMAGE_PATH = 'public/images/hero/bg p2r.jpeg';
 
 export function HeroSection() {
   return (
@@ -43,7 +42,7 @@ export function HeroSection() {
           transition={{ duration: 0.6, delay: 0.1 }}
           className="max-w-3xl font-heading text-4xl font-bold leading-[1.1] text-off-white sm:text-5xl lg:text-6xl"
         >
-          SOLUSI PENYEWAAN ALAT BERAT UNTUK SETIAP PROYEK.
+          SOLUSI PENYEWAAN ALAT BERAT UNTUK SETIAP PROYEK
         </motion.h1>
 
         <motion.p
@@ -81,7 +80,7 @@ export function HeroSection() {
         </motion.div>
 
         <p className="mt-3 text-xs italic text-off-white/40">
-          *Foto bersifat ilustrasi. Hubungi kami untuk dokumentasi unit terbaru.
+          Hubungi kami untuk info ketersediaan unit terbaru
         </p>
       </div>
     </section>
